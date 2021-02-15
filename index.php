@@ -31,16 +31,18 @@
             echo $num1 . " + " . $num2 . " = ". $addition ."<br>";
             echo $num1 . " - " . $num2 . " = ". $subtraction ."<br>";
             echo $num1 . " / " . $num2 . " = ". $division;
+
+            echo "<br>";
+
+            table(6);
+            
+            echo "<br>";
+
+            foreach($array as $value) {
+                table($value);
+            }
         ?>
     </p>
-
-    <?php
-        table(6);
-
-        foreach($array as $value) {
-            table($value);
-        }
-    ?>
     
 </body>
 </html>
