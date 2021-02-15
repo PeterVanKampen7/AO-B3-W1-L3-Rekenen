@@ -6,6 +6,14 @@
     $addition = $num1 + $num2;
     $subtraction = $num1 - $num2;
     $division = $num1 / $num2;
+
+    function table($number){
+        for($i=1; $i <= 10; $i++) { 
+            echo $i . " * " . $number . " = " . $i*$number . "<br>";
+        }
+    }
+
+    $array = [3, 5, 8, 12];
 ?>
 
 <!DOCTYPE html>
@@ -25,6 +33,14 @@
             echo $num1 . " / " . $num2 . " = ". $division;
         ?>
     </p>
+
+    <?php
+        table(6);
+
+        foreach($array as $value) {
+            table($value);
+        }
+    ?>
     
 </body>
 </html>
